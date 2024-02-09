@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <style>
+		 .background { 
+            position: fixed; 
+            height: 100%; 
+            width: 100%; 
+            background-image: url('bhabhi.PNG'); 
+            background-size: cover; 
+            background-position: top; 
+            filter: blur(3px); 
+            z-index: -1; 
+			top:10px;
+        } 
+		
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: #ed947c;
+  overflow-y: hidden;
+  transition: 3.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: pink;
+  display: block;
+  transition: 0.5s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+.flip-box {
+  background-color: transparent;
+  width: 40%;
+  height: 400px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: white;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: #ed947c;
+  color: White;
+  transform: rotateY(180deg);
+  text-align:bottom;
+  font-family: 'Arial, Helvetica, sans-serif';
+}
+</style>
+
+	 </style>
+	 
+ </head>
+  
+ <body onload="openNav()">
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Hurrayyyy!!!!!</h4>
+        </div>
+        <div class="modal-body">
+          <p>You got a guy to date & Marry as a GIFT</p>
+		  <img src="bittub.PNG" style="width:100%;">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+   <div>  
+      <div class="background"></div> 	  
+   </div>
+  
+  
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content" style="color:white">
+    <a href="#">Hello! 👋</a>
+    <a href="#">Bhabhi G 😍</a>
+    <a href="#">Namaste 🙏</a>
+    <a href="#">Click on Cross Icon (X) on top right 👍 </a>
+  </div>
+</div>
+
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+	😍😍😍😍😍😍😍😍😍😍😍😍😍😍😍😍😍😍😍😍😍😍😍😍😍😍😍
+  <img src="birthday.PNG" style="height:100%;width:100%;border-radius:1px; box-shadow:4px 4px 14px 4px white;margin-top:5%;">  	
+	</div>
+    <div class="flip-box-back">
+      <h3>Happy Birthday to the wonderful Bhabhi who brings so much joy and love into our lives! Your warmth, kindness, and laughter make every moment brighter. May this special day be filled with all the love, happiness, and blessings you deserve. Here's to many more beautiful moments together. Cheers to you, dear Bhabhi!" 🎉🎂🎈</h3>
+      <p> Here is something for you..</p>
+<div id="audioSec">	  
+	   <audio controls>
+     <source src="Bhabhi.mp3" type="audio/mpeg" />
+ </audio>
+ <div style="display:none;">
+  <audio controls>
+     <source src="heybday.mp3" type="audio/mpeg" />
+ </audio>
+ </div>
+ <div style="display:none;">
+  <audio controls>
+     <source src="clapping_sound.mp3" type="audio/mpeg" />
+ </audio>
+</div>
+</div>
+ <h1 style="color:red;">10 <sup>th </sup> FEB 2024</h1>
+	</div>
+  </div>
+</div>
+
+<center> <img src="1o39.GIF" id="candleImg" style="display:none;border-radius: 75px;" onclick="ShowGift()"></img> </center>
+<center> <img src="https://i.gifer.com/KH8E.gif" id="giftImg" style="display:none;border-radius: 75px;width:200px;" onclick="ShowGiftbox()"></img></center>
+ </body>
+ 
+ </html>
+ 
+ <script>
+$(document).on('mousemove', function(e) {
+    var xMouse = e.pageX;
+    var yMouse = e.pageY;
+    if (Math.random() < 0.1) {
+      setTimeout(function() {
+        var l = document.createElement("DIV");
+        var size = (Math.floor(Math.random() * (30 - 10)) + 40);
+        l.style.width = size + "px";
+        l.style.height = size + "px";
+        l.style.backgroundImage = "url(https://cdn.shopify.com/s/files/1/0382/4185/files/flowers.png?14993667430825853990)";
+        var bg_pos = (Math.floor(Math.random() * 4));
+        l.style.backgroundPosition = "0px -"+(size*bg_pos)+"px";
+        l.style.backgroundSize = size + "px "+4*size+"px"
+        l.style.position = "absolute";
+        l.style.left = (xMouse) + "px";
+        l.style.top = (yMouse + 10) + "px";
+        l.style.zIndex = 9999;
+        l.style.display = 'none';
+        document.body.appendChild(l);
+        $(l).fadeIn(100);
+        var stop = false;
+        var hoaroi = function() {
+          if (!stop) {
+            setTimeout(function() {
+              window.requestAnimationFrame(hoaroi);
+            }, 15);
+            l.style.top = (parseInt($(l).css('top'), 10) + 1) + "px";
+            if ((parseInt($(l).css('top'), 10)) % 10 == 0) {
+              if (Math.random() < 0.5) {
+                l.style.left = (parseInt($(l).css('left'), 10) + 1) + "px";
+              } else {
+                l.style.left = (parseInt($(l).css('left'), 10) - 1) + "px";
+              }
+            }
+          }
+        }
+        window.requestAnimationFrame(hoaroi);
+        $(l).fadeOut((Math.floor(Math.random() * (2500 - 1000)) + 1000), function() {
+          $(l).remove();
+          stop = true;
+        });
+      }, 50);
+    }
+  });
+  
+  
+  
+  
+
+
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+ <!-- if(confirm("are you going to give us a birthday party ?")) -->
+  <!-- {  -->
+  document.getElementById("myNav").style.height = "0%";
+  var audio = document.getElementsByTagName('audio')[1]
+        //add the time in seconds
+        //audio.currentTime = 60;
+        audio.play()
+        audio.style.display = 'none'
+		const myTimeout = setTimeout(myGreeting, 7000);
+
+<!-- } -->
+ <!-- else{  -->
+ //alert("oops! ammmmm bhabhi G aise nhi chalega!"); 
+  //} 
+}
+
+
+function myGreeting() {
+alert("Let's Blow the Candle now!");
+  document.getElementById("candleImg").style.display = 'block'
+}
+
+function ShowGift()
+{
+var audio = document.getElementsByTagName('audio')[1]
+        //add the time in seconds
+        audio.currentTime = 0;
+        audio.pause();
+        audio.style.display = 'none'
+ document.getElementById("candleImg").style.display = 'none'
+ document.getElementById("giftImg").style.display = 'block'
+ 
+ var audio = document.getElementsByTagName('audio')[2]
+        //add the time in seconds
+        audio.currentTime = 0;
+        audio.play();
+		
+		
+}
+
+function ShowGiftbox()
+{
+
+$("#myModal").modal('show');
+}
+
+</script>
+
+  
